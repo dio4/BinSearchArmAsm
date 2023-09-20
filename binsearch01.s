@@ -17,8 +17,8 @@ main:
 	ldr r1, =return
 	str lr, [r1]
 input: /* 1. Выводим строку приглашения puts
-		  2. Считываем ввод в num_read с пом. scanf и строки формата scanFMT
-		*/
+	  2. Считываем ввод в num_read с пом. scanf и строки формата scanFMT
+	*/
 	ldr r0, =prompt
 	bl puts
 
@@ -33,7 +33,7 @@ input: /* 1. Выводим строку приглашения puts
 	ldr r1, [r1]
 	bl printf
 
-@check sentinal (проверка ввода)
+@check (проверка ввода)
 	ldr r1, =num_read
 	ldr r1, [r1]
 	cmp r1, #0
