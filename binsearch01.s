@@ -100,3 +100,6 @@ exit:
 .global scan
 
 
+/* Запуск и оценка Perf 
+yes 123 | perf_3.2 stat --log-fd=3 --repeat=5 -e cpu-clock ./binsearch01.s 3>&1
+*/
